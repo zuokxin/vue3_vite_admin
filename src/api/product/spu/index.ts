@@ -1,5 +1,5 @@
 // spu管理木块的接口
-import request from '@/utils/request';
+import request from '@/utils/request'
 import type {
   SkuInfoData,
   SkuData,
@@ -8,8 +8,8 @@ import type {
   AllTradeMark,
   SpuHasImg,
   SaleAttrResponseData,
-  HasSaleAttrResponseData
-} from './type';
+  HasSaleAttrResponseData,
+} from './type'
 
 // 接口路径的枚举
 enum API {
@@ -32,7 +32,7 @@ enum API {
   // 查看某一个已有的spu下全部售卖的商品
   SKUINFO_URL = 'admin/product/findBySpuId',
   // 删除已有的spu
-  REMOVESPU_URL = '/admin/product/deleteSpu'
+  REMOVESPU_URL = '/admin/product/deleteSpu',
 }
 
 // 获取某一个三级分类下已有的spu数据

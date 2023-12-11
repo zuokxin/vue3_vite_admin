@@ -1,4 +1,4 @@
-import request from '@/utils/request';
+import request from '@/utils/request'
 import type { PermissionResponseData, MenuParams } from './type'
 //  枚举地址
 enum API {
@@ -19,7 +19,7 @@ export const reqAllPermission = () => {
 // 添加与更新菜单的方法
 export const reqAddOrUpdateMenu = (data: MenuParams) => {
   if (data.id) {
-    return request.put<any,any>(API.UPDATE_URL, data)
+    return request.put<any, any>(API.UPDATE_URL, data)
   } else {
     return request.post<any, any>(API.ADDMENU_URL, data)
   }

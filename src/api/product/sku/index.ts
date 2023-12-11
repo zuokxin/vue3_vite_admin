@@ -1,6 +1,6 @@
 // sku模块接口管理
-import request from '@/utils/request';
-import type { SkuResponseData, SkuInfoData } from './type';
+import request from '@/utils/request'
+import type { SkuResponseData, SkuInfoData } from './type'
 // 枚举接口地址
 enum API {
   // 获取已有的商品的数据-sku
@@ -12,7 +12,7 @@ enum API {
   // 获取商品详情的接口
   SKUINFO_URL = '/admin/product/getSkuInfo',
   // 删除已有的商品
-  DELETESKU_URL = '/admin/product/deleteSku'
+  DELETESKU_URL = '/admin/product/deleteSku',
 }
 
 // 获取商品sku的接口

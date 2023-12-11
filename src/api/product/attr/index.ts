@@ -1,6 +1,6 @@
 // 这里书写属性相关的api文件
-import request from '@/utils/request';
-import type { CategoryResponseData, AttrResponseData, Attr  } from './type';
+import request from '@/utils/request'
+import type { CategoryResponseData, AttrResponseData, Attr } from './type'
 // 枚举属性管理模块接口地址
 enum API {
   // 获取一级分类接口地址
@@ -14,7 +14,7 @@ enum API {
   // 添加或者修改已有属性的接口
   ADDORUPDATE_URL = '/admin/product/saveAttrInfo',
   // 删除某一个已有属性
-  DELETEATTR_URL = '/admin/product/deleteAttr'
+  DELETEATTR_URL = '/admin/product/deleteAttr',
 }
 
 // 获取一级分类的接口方法
@@ -31,10 +31,10 @@ export const reqC3 = (category2Id: number | string) => {
 export const reqAttr = (
   category1Id: string | number,
   category2Id: string | number,
-  category3Id: string | number
+  category3Id: string | number,
 ) => {
   request.get<any, AttrResponseData>(
-    API.ATTR_URL + `${category1Id}/${category2Id}/${category3Id}}`
+    API.ATTR_URL + `${category1Id}/${category2Id}/${category3Id}}`,
   )
 }
 

@@ -1,6 +1,6 @@
 // 角色管理模块的接口
-import request from '@/utils/request';
-import type { RoleResponseData, RoleData, MenuResponseData } from './type';
+import request from '@/utils/request'
+import type { RoleResponseData, RoleData, MenuResponseData } from './type'
 // 枚举类型
 enum API {
   // 获取全部的职位接口

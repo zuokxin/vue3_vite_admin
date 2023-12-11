@@ -1,14 +1,14 @@
 // 数据类型定义
 export interface ResponseData {
   code: number
-  message:string
+  message: string
   ok: boolean
 }
 
 // 菜单数据与按钮数据的ts类型
 export interface Permission {
   id?: number
-  createTime:string
+  createTime: string
   updateTime: string
   pid: number
   name: string
