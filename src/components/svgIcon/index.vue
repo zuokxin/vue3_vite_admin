@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- svg:图标外层容器节点，内部需要与use标签结合使用 -->
-    <svg :style="{ width: width, height: height }">
+    <svg :style="{ width, height }">
       <!-- xlink:href执行用哪个图标，属性值需要使用#icon-图标名字 -->
       <!-- use标签fill属性设置图标颜色 -->
       <use :xlink:href="prefix + name" :fill="color"></use>
